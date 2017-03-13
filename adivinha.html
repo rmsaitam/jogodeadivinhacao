@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Jogo de adivinhação de número</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="jogo de adivinhação">
+    <meta name="author" content="Reginaldo">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/form_adivinha.js"> </script>
+</head>
+<body>
+
+ <div class="container">
+
+ 	<h2>Jogo de adivinhação </h2>
+
+ 	Você pensa em um número e coloca no campo de entrada, envia ao servidor que retorna se acertou ou não o número sorteado. <br />
+
+    <form id="form_adivinha" action="" method="">
+    	
+    	<label>Número:</label>
+    	<input type="number" id="numero" name="numero" placeholder="número entre [1;999]" required>
+        
+        <button type="submit" class="btn btn-primary" id="enviar" name="enviar">Enviar</button>
+    </form>
+
+    <div id="mensagem" style="display: none">
+    </div>
+
+    <div id="erro">
+    </div>
+ </div>
+</body>
+</html>
