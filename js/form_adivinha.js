@@ -16,7 +16,7 @@ $(document).ready(function(){
           	 if(retorno.status == 1){
                 //alert("retorno = " +retorno);
                 $("#mensagem").show();
-                $("#mensagem").html("Parabéns você acertou o número. <br /> O número sorteado foi " +retorno.nu);
+                $("#mensagem").html("Parabéns você acertou o número. <br /> O número sorteado foi " +retorno.numero_sorteado);
              }
           	 	
           	 else{
